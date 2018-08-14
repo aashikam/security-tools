@@ -1,16 +1,17 @@
 # Security Advisory Data
 ---
-title:
-date:
+title: Multiple WSO2 Products
+date: 31-07-2018
 overview:
 description:
 impact:
 solution:
 publicDisclosure:
 notes:
-thanks: WSO2 Team
+thanks: WSO2 Platform Security
 advisories:
-  - name:
+  - name: WSO2-2018-0230
     severity:
     score:
     publicDisclosure:
+

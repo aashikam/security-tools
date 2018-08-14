@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Advisory for WSO2 Data Analytics Server</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        @font-face {
+            font-family: Arial Unicode MS;
+        }
+
+        div.header {
+            display: block;
+            height: 60px;
+            margin-bottom: 20px;
+            position: running(header);
+        }
+
+        @page {
+            @top-right {
+                content: element(header)
+            }
+        }
+
+        @media print {
+            .advisory-title {
+                font-weight: 600;
+                font-size: 34px;
+                width: 200%;
+                margin-bottom: 20px;
+                color: #272727;
+            }
+
+            .advisory-data {
+                font-weight: 400;
+                font-size: 20px;
+                width: 100%;
+                margin-bottom: 20px;
+                color: #232323;
+            }
+
+            .advisory-score {
+                font-weight: 400;
+                font-size: 18px;
+                width: 100%;
+                margin-bottom: 20px;
+                color: #232323;
+            }
+
+            .advisory-data-heading {
+                font-weight: bold;
+                font-size: 18px;
+                width: 100%;
+                margin-bottom: 20px;
+                color: #262626;
+            }
+
+            .advisory-data-style {
+                padding: 5% 7%;
+                font-family: arial;
+                font-size: 13px;
+                line-height: 30px;
+                color: #676767;
+                border-top: 1px solid #ffffff;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            .advisory-data-value {
+                font-weight: 400;
+                font-size: 15px;
+                width: 100%;
+                margin-bottom: 20px;
+                color: #3e3e3e;
+
+            }
+
+            .table-wum-patch {
+                page-break-after: auto;
+                padding-left: 25px;
+                border-collapse: collapse;
+                border: 1px solid black;
+                line-height: 40px;
+                align-content: center;
+                margin-top: 20px;
+                font-size: 13px;
+            }
+
+            .wum-table-row {
+                page-break-inside: avoid;
+                page-break-after: auto;
+                border-collapse: collapse;
+                border: 0.5px solid black;
+            }
+
+            .wum-table-data {
+                page-break-inside: avoid;
+                page-break-after: auto;
+                border-collapse: collapse;
+                border: 0.5px solid black;
+                font-size: 13px;
+                color: #232323;
+                padding-left: 5px;
+            }
+
+            .wum-table-head {
+                background-color: #cccccc;
+                color: #232323;
+                padding-left: 5px;
+                border-collapse: collapse;
+                border: 0.5px solid black;
+                margin-left: 10px;
+                margin-right: 4px;
+                font-size: 15px;
+            }
+
+            .list {
+                border-collapse: collapse;
+                align-content: center;
+                padding-left: 5px;
+                font-size: 13px;
+                border: 0.5px white;
+                list-style: none;
+            }
+
+            .patch-table-head {
+                page-break-inside: avoid;
+                page-break-after: auto;
+                background-color: #cccccc;
+                color: #232323;
+                font-size: 15px;
+                border-collapse: collapse;
+                border: 0.5px solid black;
+            }
+
+            .patch-table-data {
+                page-break-inside: avoid;
+                page-break-after: auto;
+                color: #232323;
+                font-size: 13px;
+                border-collapse: collapse;
+                border: 0.5px solid black;
+            }
+
+            .page-footer {
+                position: absolute;
+                top: 25cm;
+                width: 100%;
+            }
+
+            #front-page #info {
+                margin-top: 100px;
+                width: 100%;
+                line-height: 50px
+            }
+
+            #affected-products {
+                margin-top: 20px;
+            }
+
+            #overview {
+                margin-top: 20px;
+            }
+
+            #description {
+                margin-top: 20px;
+            }
+
+            #impact {
+                margin-top: 20px;
+            }
+
+            #solution {
+                margin-top: 20px;
+            }
+
+            #content-page {
+                margin-top: 20px;
+                color: #3a3a3a;
+            }
+
+            #patch-list {
+                margin-top: 50px;
+            }
+
+            #public-disclosure {
+                margin-top: 20px;
+            }
+
+            #notes {
+                margin-top: 10px;
+            }
+
+            #thanks {
+                margin-top: 10px;
+            }
+
+            #patch-supported-versions-table {
+                border-collapse: collapse;
+                border-style: solid;
+                border-color: white;
+                margin: 0px 0px;
+            }
+
+            #patch-supported-versions-head {
+                border-collapse: collapse;
+                border-style: solid;
+                border-color: #cccccc;
+                margin: 0px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class='header'>
+    <tr>
+        <td
+                style="text-align: right; width: 800px; background: #ffffff;  margin-top: 5px;margin-bottom: 20px"
+                colspan="2">
+            <img style="height: 45px; text-align: right;width: 100%; margin-top: 5px;margin-bottom: 20px;"
+                 src="http://b.content.wso2.com/sites/all/wum/wso2-logo-w.png"/>
+        </td>
+    </tr>
+</div>
+<div style="width: 100%; margin: auto; background-color: #ffffff;">
+    <table id="content-page" style="padding: 0 0; width: 100%; background: #ffffff;">
+        <tr>
+            <td colspan="2"
+                class="advisory-data-style">
+                <table id="info">
+                    <tr>
+                        <span class="advisory-title">WSO2 Data Analytics Server</span><br/>
+                    </tr>
+                    <tr>
+                        <br/>
+                        <span class="advisory-data">WSO2-2018-0421</span>
+                    </tr>
+                    <tr>
+                        <span class="advisory-data">31-07-2018</span>
+                    </tr>
+                    <tr>
+                        <span class="advisory-score">Severity : </span>
+                        <span class="advisory-score">Medium</span>
+                    </tr>
+
+                    <tr>
+                        <span class="advisory-score">CVSS Score : </span>
+                        <span class="advisory-score">CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:N/A:N</span>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <br></br>
+        <tr>
+            <span class="advisory-data-heading">AFFECTED PRODUCT </span>
+        </tr>
+        <tr>
+            <td colspan="2" class="advisory-data-value">
+                <table class="advisory-data-value" id="affected-products">
+
+                    <ul>
+
+                        <li style="list-style: none;line-height:70%">
+                            WSO2 Data Analytics Server
+                            <span style="display:inline-block; width: 30px;font-size: 15px;"></span>
+
+
+                            3.1.0
+
+
+
+                        </li>
+                        <br></br>
+
+                    </ul>
+                </table>
+            </td>
+        </tr>
+        <span class="break-page"></span>
+        <tr>
+            <td colspan="2" class="advisory-data-style">
+                <table id="overview" style="width: 100%;">
+                    <tr>
+                        <span class="advisory-data-heading">OVERVIEW </span><br/>
+                    </tr>
+                    <tr>
+                        <span class="advisory-data-value">It has been identified that the ML application sends some sensitive information in a GET request where the data is trasnferred in query parameter. </span>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <span class="break-page"></span>
+        <tr>
+            <td colspan="2" class="advisory-data-style">
+                <table id="description" style="width: 100%; line-height: 30px">
+                    <tr>
+                        <span class="advisory-data-heading">DESCRIPTION  </span><br/>
+                    </tr>
+                    <tr>
+                        <span class="advisory-data-value">ML application login page of DAS 3.1.0, sends credentials in GET request as query paramters in plain text. </span>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <span class="break-page"></span>
+        <tr>
+            <td colspan="2" class="advisory-data-style">
+                <table id="impact" style="width: 100%; line-height: 30px">
+                    <tr>
+                        <span class="advisory-data-heading">IMPACT  </span><br/>
+                    </tr>
+                    <tr>
+                        <span class="advisory-data-value">When the sensitive information is passed in query parameters, those can get exposed via server logs, browser history etc. </span>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <span class="break-page"></span>
+        <tr>
+            <td colspan="2" class="advisory-data-style">
+                <table id="solution" style="width: 100%;">
+                    <tr>
+                        <span class="advisory-data-heading">SOLUTION  </span><br/>
+                    </tr>
+                    <tr>
+                        <span class="advisory-data-value">The recommended solution is to apply the provided patch/update to the affected versions of the products. </span><br/>
+                    </tr>
+
+                    <span class="break-page"></span>
+                    <tr><br/><u
+                            class="advisory-data-value">For</u>
+                        <u>
+                            <a href="https://wso2.com/updates/wum">WSO2 Update Manager (WUM)</a>
+                        </u>
+                        <u class="advisory-data-value">Supported Products</u><br/>
+                    </tr>
+                    <span class="advisory-data-value">Please use WUM to update the following products.
+                     Patches can be used in case WUM is not applicable.</span>
+                    <table class="table-wum-patch"
+                           cellspacing="10">
+                        <tr class="wum-table-row" style="font-weight: bold">
+                            <th class="wum-table-head" style="width: 80px">
+                                Code
+                            </th>
+                            <th class="wum-table-head" style="width: 200px">
+                                Product
+                            </th>
+                            <th class="wum-table-head" style="width: 60px">
+                                Version
+                            </th>
+                        </tr>
+
+                        <tr class="wum-table-row">
+                            <td class="wum-table-data"> DAS</td>
+                            <td class="wum-table-data">  WSO2 Data Analytics Server</td>
+                            <td class="wum-table-data">
+
+
+                                <li class="list" style="line-height:200%">
+                                    3.1.0
+                                </li>
+
+                            </td>
+                        </tr>
+
+                    </table>
+                    <br/> <br/>
+
+                    <span class="break-page"></span>
+                </table>
+            </td>
+        </tr>
+
+        <span class="break-page"></span>
+
+
+        <span class="break-page"></span>
+        <tr>
+            <td colspan="2" class="advisory-data-style">
+                <table id="notes" style="width: 100%;">
+                    <tr>
+                        <span class="advisory-data-heading">NOTES </span><br/>
+                        <span class="advisory-data-value">We have already tested these updates/patches in-house. However, we strongly recommend you to test this in your development/test environments before applying to the production setups.</span><br/>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <span class="break-page"></span>
+        <tr id="thanks" style="line-height: 30px">
+            <span class="advisory-data-value">Thanks, </span><br/>
+            <span class="advisory-data-value">WSO2 Team</span><br/>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

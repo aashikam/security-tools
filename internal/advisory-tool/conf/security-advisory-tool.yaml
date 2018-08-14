@@ -1,19 +1,19 @@
-# Advisory Tool Configurations
+#
 ---
-patchListAPI:
-patchDetailsAPI:
-advisoryDetailsAPI:
+patchListAPI: https://supporttools.wso2.com/pmtapp/api/v1.0/securityadvisory/patchlist?securityAdvisoryName=
+patchDetailsAPI: https://umt.private.wso2.com/wumapi/1.0.0/properties?path=/_system/governance/patchs/
+advisoryDetailsAPI: https://umt.private.wso2.com/wumapi/1.0.0/properties?path=/_system/governance/securityadvisories/
 
 #The patch supported period in years.
 patchSupportPeriod: 3
 
 #API Credentials
-patchListAPIUsername:
-patchListAPIPassword:
-patchDetailsAPIAuthToken:
-advisoryDetailsAPIAuthToken:
+patchListAPIUsername: customersecurity@wso2.com
+patchListAPIPassword: 4C8iPMru1JxtILjs9JKGZ76ZkfgZNPAIhyQYb9j2#
+patchDetailsAPIAuthToken: 55dc153219f8556ca73b9c85acbeb595
+advisoryDetailsAPIAuthToken: 55dc153219f8556ca73b9c85acbeb595
 
-patchZIPCustomerLocation:
+patchZIPCustomerLocation: https://support.wso2.com/patches/Security%20Patches/
 patchZIPPublicLocation:
 
 platforms:

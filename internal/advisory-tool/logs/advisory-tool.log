@@ -1,0 +1,1378 @@
+2018-07-25 10:11:36 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:11:36 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:11:36 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:11:36 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:11:36 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:11:36 ERROR AdvisoryTool:103 - Error occurred while parsing the tool parameters
+com.beust.jcommander.ParameterException: The following options are required: [-out], [-type]
+	at com.beust.jcommander.JCommander.validateOptions(JCommander.java:381)
+	at com.beust.jcommander.JCommander.parse(JCommander.java:341)
+	at com.beust.jcommander.JCommander.parse(JCommander.java:319)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:76)
+2018-07-25 10:12:41 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:12:41 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:12:41 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:12:41 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:12:41 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:12:41 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error while loading conf/security-advisory-tool.yaml configuration file
+	at org.wso2.security.tools.advisorytool.config.ConfigurationBuilder.getConfiguration(ConfigurationBuilder.java:76)
+	at org.wso2.security.tools.advisorytool.config.ConfigurationBuilder.getConfiguration(ConfigurationBuilder.java:58)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.loadConfiguration(AdvisoryTool.java:316)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:84)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "patchDetailsAPIToken" (class org.wso2.security.tools.advisorytool.config.Configuration), not marked as ignorable (13 known properties: , "patchDetailsAPI", "platforms", "advisoryDetailsAPIAuthToken", "outputGenerators", "patchSupportPeriod", "patchListAPIUsername", "patchZIPCustomerLocation", "patchListAPIPassword" [truncated]])
+ at [Source: conf/security-advisory-tool.yaml; line: 13, column: 62] (through reference chain: org.wso2.security.tools.advisorytool.config.Configuration["patchDetailsAPIToken"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:79)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:555)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:708)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1160)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:315)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:121)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2888)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:1988)
+	at org.wso2.security.tools.advisorytool.config.ConfigurationBuilder.getConfiguration(ConfigurationBuilder.java:73)
+	... 3 more
+2018-07-25 10:13:22 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:13:22 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:13:22 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:13:22 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:13:22 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:13:22 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error while loading conf/security-advisory-tool.yaml configuration file
+	at org.wso2.security.tools.advisorytool.config.ConfigurationBuilder.getConfiguration(ConfigurationBuilder.java:76)
+	at org.wso2.security.tools.advisorytool.config.ConfigurationBuilder.getConfiguration(ConfigurationBuilder.java:58)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.loadConfiguration(AdvisoryTool.java:316)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:84)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "patchDetailsAPIToken" (class org.wso2.security.tools.advisorytool.config.Configuration), not marked as ignorable (13 known properties: , "patchDetailsAPI", "platforms", "advisoryDetailsAPIAuthToken", "outputGenerators", "patchSupportPeriod", "patchListAPIUsername", "patchZIPCustomerLocation", "patchListAPIPassword" [truncated]])
+ at [Source: conf/security-advisory-tool.yaml; line: 13, column: 62] (through reference chain: org.wso2.security.tools.advisorytool.config.Configuration["patchDetailsAPIToken"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:79)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:555)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:708)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1160)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:315)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:121)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2888)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:1988)
+	at org.wso2.security.tools.advisorytool.config.ConfigurationBuilder.getConfiguration(ConfigurationBuilder.java:73)
+	... 3 more
+2018-07-25 10:13:40 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:13:40 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:13:40 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:13:40 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:13:40 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:13:40 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error while loading conf/security-advisory-tool.yaml configuration file
+	at org.wso2.security.tools.advisorytool.config.ConfigurationBuilder.getConfiguration(ConfigurationBuilder.java:76)
+	at org.wso2.security.tools.advisorytool.config.ConfigurationBuilder.getConfiguration(ConfigurationBuilder.java:58)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.loadConfiguration(AdvisoryTool.java:316)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:84)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "patchDetailsAPIToken" (class org.wso2.security.tools.advisorytool.config.Configuration), not marked as ignorable (13 known properties: , "patchDetailsAPI", "platforms", "advisoryDetailsAPIAuthToken", "outputGenerators", "patchSupportPeriod", "patchListAPIUsername", "patchZIPCustomerLocation", "patchListAPIPassword" [truncated]])
+ at [Source: conf/security-advisory-tool.yaml; line: 13, column: 62] (through reference chain: org.wso2.security.tools.advisorytool.config.Configuration["patchDetailsAPIToken"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:79)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportUnknownProperty(DeserializationContext.java:555)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:708)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1160)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:315)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:121)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2888)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:1988)
+	at org.wso2.security.tools.advisorytool.config.ConfigurationBuilder.getConfiguration(ConfigurationBuilder.java:73)
+	... 3 more
+2018-07-25 10:21:17 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:21:17 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:21:17 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:21:17 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:21:17 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:21:17 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while reading conf/security-advisory-data.yaml
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.loadSecurityAdvisoryListFromFile(AdvisoryTool.java:306)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:86)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Can not instantiate value of type [simple type, class org.wso2.security.tools.advisorytool.model.SecurityAdvisory] from String value; no single-String constructor/factory method (through reference chain: org.wso2.security.tools.advisorytool.model.SecurityAdvisoryData["advisories"])
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator._createFromStringFallbacks(StdValueInstantiator.java:428)
+	at com.fasterxml.jackson.databind.deser.std.StdValueInstantiator.createFromString(StdValueInstantiator.java:299)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromString(BeanDeserializerBase.java:1056)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:136)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:123)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:230)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:207)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:23)
+	at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:464)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:98)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:295)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:121)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2888)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:1988)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.loadSecurityAdvisoryListFromFile(AdvisoryTool.java:236)
+	... 1 more
+2018-07-25 10:22:40 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:22:40 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:22:40 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:22:40 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:22:40 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:22:41 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Security Advisory date cannot be empty
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.loadSecurityAdvisoryListFromFile(AdvisoryTool.java:262)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:86)
+2018-07-25 10:23:48 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:23:48 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:23:48 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:23:48 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:23:48 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:23:48 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0426
+2018-07-25 10:23:49 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while creating the security advisory WSO2-2018-0426
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:63)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:99)
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while building the advisory details.
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:96)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:53)
+	... 1 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while setting the advisory data from PMT
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:227)
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:60)
+	... 2 more
+Caused by: org.json.JSONException: A JSONArray text must start with '[' at character 1
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:410)
+	at org.json.JSONArray.<init>(JSONArray.java:113)
+	at org.json.JSONArray.<init>(JSONArray.java:157)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:181)
+	... 3 more
+2018-07-25 10:24:34 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:24:34 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:24:34 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:24:34 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:24:34 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:24:34 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0447
+2018-07-25 10:24:35 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while creating the security advisory WSO2-2018-0447
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:63)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:99)
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while building the advisory details.
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:96)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:53)
+	... 1 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while setting the advisory data from PMT
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:227)
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:60)
+	... 2 more
+Caused by: org.json.JSONException: A JSONArray text must start with '[' at character 1
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:410)
+	at org.json.JSONArray.<init>(JSONArray.java:113)
+	at org.json.JSONArray.<init>(JSONArray.java:157)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:181)
+	... 3 more
+2018-07-25 10:25:44 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:25:44 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:25:44 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:25:44 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:25:44 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:25:44 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0447
+2018-07-25 10:25:45 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while creating the security advisory WSO2-2018-0447
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:63)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:99)
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while building the advisory details.
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:96)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:53)
+	... 1 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while setting the advisory data from PMT
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:227)
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:60)
+	... 2 more
+Caused by: org.json.JSONException: A JSONArray text must start with '[' at character 1
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:410)
+	at org.json.JSONArray.<init>(JSONArray.java:113)
+	at org.json.JSONArray.<init>(JSONArray.java:157)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:181)
+	... 3 more
+2018-07-25 10:36:15 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:36:15 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:36:15 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:36:15 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:36:15 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:36:15 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0447
+2018-07-25 10:36:16 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while creating the security advisory WSO2-2018-0447
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:63)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:99)
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while building the advisory details.
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:96)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:53)
+	... 1 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while setting the advisory data from PMT
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:227)
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:60)
+	... 2 more
+Caused by: org.json.JSONException: A JSONArray text must start with '[' at character 1
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:410)
+	at org.json.JSONArray.<init>(JSONArray.java:113)
+	at org.json.JSONArray.<init>(JSONArray.java:157)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:181)
+	... 3 more
+2018-07-25 10:38:16 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:38:16 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:38:16 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:38:16 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:38:16 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:38:17 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0447
+2018-07-25 10:40:18 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while creating the security advisory WSO2-2018-0447
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:63)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:99)
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while building the advisory details.
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:96)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:53)
+	... 1 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while setting the advisory data from PMT
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:227)
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:60)
+	... 2 more
+Caused by: org.json.JSONException: A JSONArray text must start with '[' at character 1
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:410)
+	at org.json.JSONArray.<init>(JSONArray.java:113)
+	at org.json.JSONArray.<init>(JSONArray.java:157)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:181)
+	... 3 more
+2018-07-25 10:40:31 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:40:31 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:40:31 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:40:31 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:40:31 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:40:32 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0447
+2018-07-25 10:43:30 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:43:30 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:43:30 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:43:30 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:43:30 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:43:31 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0447
+2018-07-25 10:43:44 WARN  CustomerSecurityAdvisoryBuilder:318 - Unable to find the version 5.2.0 for the product WSO2 Identity Cloud in the Products list
+2018-07-25 10:43:44 WARN  CustomerSecurityAdvisoryBuilder:324 - Unable to find the product WSO2 Identity Cloud in the Products list
+2018-07-25 10:43:44 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 10:43:44 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 10:43:46 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 10:48:25 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 10:48:25 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 10:48:25 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 10:48:25 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 10:48:25 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 10:48:26 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0447
+2018-07-25 10:48:30 WARN  CustomerSecurityAdvisoryBuilder:318 - Unable to find the version 5.2.0 for the product WSO2 Identity Cloud in the Products list
+2018-07-25 10:48:30 WARN  CustomerSecurityAdvisoryBuilder:324 - Unable to find the product WSO2 Identity Cloud in the Products list
+2018-07-25 10:48:30 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 10:48:30 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 10:48:32 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 11:52:31 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 11:52:31 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 11:52:31 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 11:52:31 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 11:52:31 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 11:52:32 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0426
+2018-07-25 11:52:37 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 11:52:37 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 11:52:39 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 12:00:10 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 12:00:10 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 12:00:10 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 12:00:10 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 12:00:10 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 12:00:11 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0422
+2018-07-25 12:00:19 WARN  SecurityAdvisoryBuilder:109 - Patch WSO2-CARBON-PATCH-4.4.0-2596 is in the state of OnHold
+2018-07-25 12:00:20 WARN  SecurityAdvisoryBuilder:109 - Patch WSO2-CARBON-PATCH-4.4.0-2634 is in the state of OnHold
+2018-07-25 12:00:32 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 12:00:32 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 12:00:35 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 12:01:01 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 12:01:01 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 12:01:01 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 12:01:01 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 12:01:01 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 12:01:01 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0421
+2018-07-25 12:01:05 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while creating the security advisory WSO2-2018-0421
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:63)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:99)
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Couldn't find any patches in the PMT
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getPatchNamesListForAdvisory(SecurityAdvisoryBuilder.java:296)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getApplicablePatchListForAdvisory(SecurityAdvisoryBuilder.java:262)
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.buildAffectedProductsList(CustomerSecurityAdvisoryBuilder.java:104)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:54)
+	... 1 more
+2018-07-25 12:04:14 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 12:04:14 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 12:04:14 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 12:04:14 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 12:04:14 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 12:04:15 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0426
+2018-07-25 12:04:17 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 12:04:17 INFO  SecurityAdvisoryHTMLOutputGenerator:63 - Security Advisory HTML generation started
+2018-07-25 12:04:18 INFO  SecurityAdvisoryHTMLOutputGenerator:67 - Security Advisory HTML generation completed
+2018-07-25 12:14:21 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 12:14:21 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 12:14:21 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 12:14:21 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 12:14:21 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 12:14:22 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0426
+2018-07-25 12:14:22 INFO  SecurityAdvisoryPDFOutputGeneratorFromHTML:46 - Security Advisory PDF generation from HTML started
+2018-07-25 12:14:23 INFO  SecurityAdvisoryPDFOutputGeneratorFromHTML:72 - Security Advisory PDF generation from HTML completed
+2018-07-25 12:14:54 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 12:14:54 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 12:14:54 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 12:14:54 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 12:14:54 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 12:14:54 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0421
+2018-07-25 12:14:54 INFO  SecurityAdvisoryPDFOutputGeneratorFromHTML:46 - Security Advisory PDF generation from HTML started
+2018-07-25 12:18:05 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 12:18:05 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 12:18:05 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 12:18:05 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 12:18:05 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 12:18:05 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0421
+2018-07-25 12:18:05 INFO  SecurityAdvisoryPDFOutputGeneratorFromHTML:46 - Security Advisory PDF generation from HTML started
+2018-07-25 12:18:07 INFO  SecurityAdvisoryPDFOutputGeneratorFromHTML:72 - Security Advisory PDF generation from HTML completed
+2018-07-25 12:35:17 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 12:35:17 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 12:35:17 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 12:35:17 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 12:35:17 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 12:35:18 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0385
+2018-07-25 12:35:23 WARN  SecurityAdvisoryBuilder:109 - Patch WSO2-CARBON-PATCH-4.4.0-2998 is in the state of Staging
+2018-07-25 12:35:23 WARN  SecurityAdvisoryBuilder:109 - Patch WSO2-CARBON-PATCH-4.4.0-3026 is in the state of Staging
+2018-07-25 12:35:23 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 12:35:23 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 12:35:25 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 12:48:41 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 12:48:41 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 12:48:41 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 12:48:41 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 12:48:41 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 12:48:42 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0384
+2018-07-25 12:48:49 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 12:48:49 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 12:48:51 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 13:49:07 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 13:49:07 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 13:49:07 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 13:49:07 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 13:49:07 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 13:49:07 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0369
+2018-07-25 13:49:11 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 13:49:11 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 13:49:12 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 13:54:49 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 13:54:49 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 13:54:49 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 13:54:49 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 13:54:49 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 13:54:49 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0369
+2018-07-25 13:54:51 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 13:54:51 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 13:54:53 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 14:03:51 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 14:03:51 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 14:03:51 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 14:03:51 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 14:03:51 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 14:03:52 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0214
+2018-07-25 14:03:58 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 14:03:58 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 14:04:00 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 14:12:57 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 14:12:57 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 14:12:57 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 14:12:57 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 14:12:57 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 14:12:58 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error while loading conf/Products.yaml products file
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.loadReleasedProductsList(AdvisoryTool.java:185)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:85)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: null; mapping values are not allowed here;  in 'reader', line 752, column 9:
+        name: "WSO2 Enterprise Store"
+            ^ (through reference chain: org.wso2.security.tools.advisorytool.data.ProductDataHolder["productList"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:232)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:197)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1311)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:297)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:121)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2888)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:1988)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.loadReleasedProductsList(AdvisoryTool.java:181)
+	... 1 more
+Caused by: mapping values are not allowed here
+ in 'reader', line 752, column 9:
+        name: "WSO2 Enterprise Store"
+            ^
+
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:871)
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:360)
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226)
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at com.fasterxml.jackson.dataformat.yaml.YAMLParser.nextToken(YAMLParser.java:331)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:121)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:230)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:207)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:23)
+	at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:464)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:98)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:295)
+	... 5 more
+2018-07-25 14:13:49 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 14:13:49 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 14:13:49 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 14:13:49 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 14:13:49 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 14:13:50 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2017-0231
+2018-07-25 14:13:57 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 14:13:57 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 14:13:59 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 15:12:54 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 15:12:54 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 15:12:54 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 15:12:54 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 15:12:54 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 15:12:54 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2017-0238
+2018-07-25 15:13:01 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 15:13:01 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 15:13:02 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 15:18:56 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 15:18:56 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 15:18:56 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 15:18:56 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 15:18:56 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 15:18:56 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2017-0238
+2018-07-25 15:19:00 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 15:19:00 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 15:19:02 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 15:34:37 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 15:34:37 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 15:34:37 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 15:34:37 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 15:34:37 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 15:34:38 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2017-0238
+2018-07-25 15:34:45 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 15:34:45 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 15:34:47 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 15:36:26 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 15:36:26 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 15:36:26 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 15:36:26 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 15:36:26 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 15:36:27 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2017-0238
+2018-07-25 15:36:33 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 15:36:33 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 15:36:36 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 15:36:36 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 15:36:36 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 15:36:36 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 15:36:36 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 15:36:36 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 15:36:37 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2017-0238
+2018-07-25 15:36:40 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 15:36:40 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 15:36:43 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 15:38:14 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 15:38:14 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 15:38:14 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 15:38:14 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 15:38:14 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 15:38:15 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2017-0238
+2018-07-25 15:38:17 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 15:38:17 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 15:38:20 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 15:40:38 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 15:40:38 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 15:40:38 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 15:40:38 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 15:40:38 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 15:40:39 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2017-0238
+2018-07-25 15:40:41 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 15:40:41 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 15:40:44 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 15:41:50 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 15:41:50 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 15:41:50 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 15:41:50 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 15:41:50 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 15:41:50 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2017-0238
+2018-07-25 15:41:53 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 15:41:53 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 15:41:55 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 16:42:50 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 16:42:50 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 16:42:50 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 16:42:50 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 16:42:50 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 16:42:51 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-25 16:42:57 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 16:42:57 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 16:43:00 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-25 17:06:52 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-25 17:06:52 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-25 17:06:52 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-25 17:06:52 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-25 17:06:52 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-25 17:06:53 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-25 17:06:58 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-25 17:06:58 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-25 17:07:01 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 09:58:36 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 09:58:36 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 09:58:36 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 09:58:36 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 09:58:36 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 09:58:36 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 09:58:42 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 09:58:42 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 09:58:45 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 09:59:13 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 09:59:13 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 09:59:13 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 09:59:13 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 09:59:13 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 09:59:13 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 09:59:15 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 09:59:15 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 09:59:17 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 10:34:58 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 10:34:58 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 10:34:58 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 10:34:58 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 10:34:58 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 10:34:58 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 10:35:06 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 10:35:06 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 10:35:08 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 10:36:42 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 10:36:42 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 10:36:42 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 10:36:42 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 10:36:42 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 10:36:42 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 10:36:45 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 10:36:45 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 10:36:46 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 11:52:40 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 11:52:40 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 11:52:40 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 11:52:40 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 11:52:40 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 11:52:40 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while reading conf/security-advisory-data.yaml
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.loadSecurityAdvisoryListFromFile(AdvisoryTool.java:306)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:86)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: null; mapping values are not allowed here;  in 'reader', line 13, column 37:
+      - name: Customer Security Advisory: WSO2-2018-0230
+                                        ^ (through reference chain: org.wso2.security.tools.advisorytool.model.SecurityAdvisoryData["advisories"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:232)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:197)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1311)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:297)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:121)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2888)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:1988)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.loadSecurityAdvisoryListFromFile(AdvisoryTool.java:236)
+	... 1 more
+Caused by: mapping values are not allowed here
+ in 'reader', line 13, column 37:
+      - name: Customer Security Advisory: WSO2-2018-0230
+                                        ^
+
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:871)
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:360)
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226)
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:168)
+	at com.fasterxml.jackson.dataformat.yaml.YAMLParser.nextToken(YAMLParser.java:331)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:121)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:230)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:207)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:23)
+	at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:464)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:98)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:295)
+	... 5 more
+2018-07-26 11:53:08 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 11:53:08 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 11:53:08 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 11:53:08 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 11:53:08 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 11:53:08 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory Customer Security Advisory - WSO2-2018-0230
+2018-07-26 11:53:22 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 11:53:22 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 11:53:22 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 11:53:22 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 11:53:22 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 11:53:22 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory Customer Security Advisory WSO2-2018-0230
+2018-07-26 11:53:31 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 11:53:31 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 11:53:31 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 11:53:31 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 11:53:31 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 11:53:32 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 11:53:36 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 11:53:36 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 11:53:39 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 11:55:28 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 11:55:28 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 11:55:28 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 11:55:28 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 11:55:28 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 11:55:28 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 11:55:30 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 11:55:30 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 11:55:32 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 11:55:59 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 11:55:59 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 11:55:59 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 11:55:59 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 11:55:59 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 11:55:59 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 11:56:01 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 11:56:01 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 11:56:03 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 11:59:13 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 11:59:13 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 11:59:13 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 11:59:13 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 11:59:13 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 11:59:13 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 11:59:16 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 11:59:16 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 11:59:18 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:07:38 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:07:39 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:07:39 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:07:39 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:07:39 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:07:39 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:07:41 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:07:41 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:07:44 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:08:42 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:08:42 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:08:42 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:08:42 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:08:42 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:08:42 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:08:45 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:08:45 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:08:46 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:10:33 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:10:33 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:10:33 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:10:33 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:10:33 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:10:34 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:10:39 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:10:39 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:10:41 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:11:28 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:11:28 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:11:28 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:11:28 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:11:28 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:11:28 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:11:30 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:11:30 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:11:32 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:12:26 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:12:26 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:12:26 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:12:26 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:12:26 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:12:26 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:12:28 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:12:28 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:12:30 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:13:14 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:13:14 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:13:14 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:13:14 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:13:14 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:13:14 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:13:16 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:13:16 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:13:18 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:13:58 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:13:58 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:13:58 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:13:58 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:13:58 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:13:58 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:14:00 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:14:00 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:14:02 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:17:07 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:17:07 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:17:07 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:17:07 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:17:07 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:17:07 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:17:10 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:17:10 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:17:12 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:18:23 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:18:23 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:18:23 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:18:23 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:18:23 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:18:24 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:18:26 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:18:26 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:18:28 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:19:40 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:19:40 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:19:40 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:19:40 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:19:40 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:19:40 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:19:43 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:19:43 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:19:45 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:21:47 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:21:47 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:21:47 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:21:47 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:21:47 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:21:47 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:21:50 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:21:50 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:22:20 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:22:20 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:22:20 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:22:20 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:22:20 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:22:20 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:22:22 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:22:22 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:22:24 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:23:13 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:23:13 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:23:13 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:23:13 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:23:13 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:23:14 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:23:16 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:23:16 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:23:18 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 12:24:30 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 12:24:30 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 12:24:30 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 12:24:30 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 12:24:30 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 12:24:30 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 12:24:33 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 12:24:33 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 12:24:35 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:21:32 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:21:32 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:21:32 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:21:32 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:21:32 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:21:32 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:21:37 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:21:37 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:21:39 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:23:50 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:23:50 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:23:50 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:23:50 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:23:50 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:23:50 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:23:52 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:23:52 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:23:55 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:25:55 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:25:55 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:25:55 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:25:55 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:25:55 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:25:55 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:25:57 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:25:57 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:25:59 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:26:47 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:26:47 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:26:47 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:26:47 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:26:47 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:26:47 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:26:49 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:26:49 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:26:51 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:27:52 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:27:52 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:27:52 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:27:52 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:27:52 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:27:52 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:27:55 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:27:55 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:27:57 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:33:08 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:33:08 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:33:08 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:33:08 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:33:08 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:33:09 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:33:12 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:33:12 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:33:14 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:36:18 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:36:18 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:36:18 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:36:18 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:36:18 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:36:19 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:36:21 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:36:21 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:36:23 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:38:47 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:38:47 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:38:47 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:38:47 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:38:47 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:38:48 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:38:52 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:38:52 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:38:54 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:39:54 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:39:54 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:39:54 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:39:54 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:39:54 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:39:54 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:39:56 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:39:56 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:39:58 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:41:51 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:41:51 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:41:51 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:41:51 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:41:51 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:41:51 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:41:53 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:41:53 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:41:55 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:45:56 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:45:56 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:45:56 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:45:56 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:45:56 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:45:57 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:45:59 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:45:59 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:46:01 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:48:19 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:48:19 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:48:19 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:48:19 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:48:19 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:48:20 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:48:24 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:48:24 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:48:26 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 14:49:17 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 14:49:17 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 14:49:17 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 14:49:17 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 14:49:17 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 14:49:17 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 14:49:19 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 14:49:19 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 14:49:21 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 15:07:51 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 15:07:51 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 15:07:51 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 15:07:51 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 15:07:51 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 15:07:51 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 15:07:56 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 15:07:56 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 15:07:58 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 15:13:19 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 15:13:19 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 15:13:19 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 15:13:19 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 15:13:19 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 15:13:19 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 15:13:21 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 15:13:21 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 15:13:23 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 15:17:41 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 15:17:41 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 15:17:41 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 15:17:41 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 15:17:41 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 15:17:41 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 15:17:44 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 15:17:44 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 15:17:46 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 15:18:13 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 15:18:13 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 15:18:13 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 15:18:13 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 15:18:13 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 15:18:13 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 15:18:15 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 15:18:15 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 15:18:17 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 15:19:44 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 15:19:44 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 15:19:44 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 15:19:44 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 15:19:44 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 15:19:44 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 15:19:46 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 15:19:46 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 15:19:48 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 15:42:15 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 15:42:15 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 15:42:15 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 15:42:15 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 15:42:15 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 15:42:15 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 15:42:19 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 15:42:19 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 15:42:22 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 15:53:05 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 15:53:05 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 15:53:05 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 15:53:05 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 15:53:05 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 15:53:05 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 15:53:07 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 15:53:07 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 15:53:09 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 15:56:13 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 15:56:13 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 15:56:13 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 15:56:13 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 15:56:13 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 15:56:14 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 15:56:16 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 15:56:16 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 15:56:18 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 15:57:57 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 15:57:57 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 15:57:57 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 15:57:57 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 15:57:57 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 15:57:58 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 15:58:05 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 15:58:05 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 15:58:07 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 15:59:31 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 15:59:31 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 15:59:31 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 15:59:31 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 15:59:31 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 15:59:31 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 15:59:33 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 15:59:33 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 15:59:35 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:02:26 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:02:26 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:02:26 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:02:26 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:02:26 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:02:26 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:02:28 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:02:28 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:02:30 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:05:41 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:05:41 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:05:41 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:05:41 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:05:41 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:05:42 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:05:43 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:05:43 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:05:46 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:06:49 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:06:49 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:06:49 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:06:49 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:06:49 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:06:49 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:06:51 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:06:51 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:06:53 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:09:07 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:09:07 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:09:07 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:09:07 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:09:07 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:09:07 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:09:10 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:09:10 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:09:12 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:11:41 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:11:41 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:11:41 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:11:41 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:11:41 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:11:41 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:11:43 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:11:43 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:11:45 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:13:17 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:13:17 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:13:17 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:13:17 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:13:17 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:13:18 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:13:22 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:13:22 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:15:48 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:15:48 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:15:48 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:15:48 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:15:48 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:15:48 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:15:51 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:15:51 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:16:52 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:16:52 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:16:52 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:16:52 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:16:52 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:16:53 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:16:55 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:16:55 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:16:57 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:19:21 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:19:21 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:19:21 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:19:21 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:19:21 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:19:21 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:19:24 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:19:24 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:19:26 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:20:49 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:20:49 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:20:49 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:20:49 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:20:49 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:20:49 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:20:51 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:20:51 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:20:53 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:21:45 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:21:45 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:21:45 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:21:45 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:21:45 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:21:45 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:21:47 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:21:47 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:21:49 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:22:30 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:22:30 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:22:30 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:22:30 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:22:30 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:22:31 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:22:32 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:22:32 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:22:32 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:22:32 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:22:32 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:22:33 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:22:36 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:22:36 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:22:37 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:23:58 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:23:58 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:23:58 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:23:58 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:23:58 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:23:59 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:24:01 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:24:01 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:24:03 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:26:40 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:26:40 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:26:40 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:26:40 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:26:40 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:26:40 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:26:42 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:26:42 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:26:44 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:28:08 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:28:08 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:28:08 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:28:08 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:28:08 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:28:08 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:28:14 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:28:14 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:28:16 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:54:06 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:54:06 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:54:06 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:54:06 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:54:06 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:54:07 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:54:12 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:54:12 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:54:14 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:56:03 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:56:03 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:56:03 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:56:03 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:56:03 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:56:03 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:56:05 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:56:05 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:56:07 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 16:57:25 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 16:57:25 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 16:57:25 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 16:57:25 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 16:57:25 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 16:57:25 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 16:57:28 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 16:57:28 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 16:57:30 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 17:01:26 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 17:01:26 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 17:01:26 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 17:01:26 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 17:01:26 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 17:01:27 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 17:01:29 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 17:01:29 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 17:01:31 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 17:04:35 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 17:04:35 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 17:04:35 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 17:04:35 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 17:04:35 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 17:04:35 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 17:04:37 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 17:04:37 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 17:04:40 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 17:07:53 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 17:07:53 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 17:07:53 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 17:07:53 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 17:07:53 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 17:07:53 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 17:07:56 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 17:07:56 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 17:07:58 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-26 17:09:29 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-26 17:09:29 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-26 17:09:29 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-26 17:09:29 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-26 17:09:29 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-26 17:09:30 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-26 17:09:35 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-26 17:09:35 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-26 17:09:37 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-29 14:21:50 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-29 14:21:50 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-29 14:21:50 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-29 14:21:50 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-29 14:21:50 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-29 14:21:51 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-29 14:21:51 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while creating the security advisory WSO2-2018-0230
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:63)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:99)
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while building the advisory details.
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:96)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:53)
+	... 1 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while receiving the WSO2-2018-0230 advisory details from the PMT
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:174)
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:60)
+	... 2 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Connection to the URL https://umt.private.wso2.com/wumapi/1.0.0/properties?path=/_system/governance/securityadvisories/WSO2-2018-0230 failed
+	at org.wso2.security.tools.advisorytool.utils.Util.httpConnection(Util.java:68)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:168)
+	... 3 more
+Caused by: java.net.UnknownHostException: umt.private.wso2.com: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.wso2.security.tools.advisorytool.utils.Util.httpConnection(Util.java:66)
+	... 4 more
+2018-07-29 14:22:42 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-29 14:22:42 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-29 14:22:42 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-29 14:22:42 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-29 14:22:42 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-29 14:22:43 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-29 14:22:43 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while creating the security advisory WSO2-2018-0230
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:63)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:99)
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while building the advisory details.
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:96)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:53)
+	... 1 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while receiving the WSO2-2018-0230 advisory details from the PMT
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:174)
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:60)
+	... 2 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Connection to the URL https://umt.private.wso2.com/wumapi/1.0.0/properties?path=/_system/governance/securityadvisories/WSO2-2018-0230 failed
+	at org.wso2.security.tools.advisorytool.utils.Util.httpConnection(Util.java:68)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:168)
+	... 3 more
+Caused by: java.net.UnknownHostException: umt.private.wso2.com: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.wso2.security.tools.advisorytool.utils.Util.httpConnection(Util.java:66)
+	... 4 more
+2018-07-29 14:23:55 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-29 14:23:55 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-29 14:23:55 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-29 14:23:55 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-29 14:23:55 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-29 14:23:56 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-29 14:23:56 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while creating the security advisory WSO2-2018-0230
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:63)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:99)
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while building the advisory details.
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:96)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:53)
+	... 1 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while receiving the WSO2-2018-0230 advisory details from the PMT
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:174)
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:60)
+	... 2 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Connection to the URL https://umt.private.wso2.com/wumapi/1.0.0/properties?path=/_system/governance/securityadvisories/WSO2-2018-0230 failed
+	at org.wso2.security.tools.advisorytool.utils.Util.httpConnection(Util.java:68)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:168)
+	... 3 more
+Caused by: java.net.UnknownHostException: umt.private.wso2.com: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.wso2.security.tools.advisorytool.utils.Util.httpConnection(Util.java:66)
+	... 4 more
+2018-07-29 14:24:44 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-29 14:24:44 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-29 14:24:44 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-29 14:24:44 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-29 14:24:44 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-29 14:24:44 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-29 14:24:44 ERROR AdvisoryTool:105 - Error occurred while generating the security advisories
+org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while creating the security advisory WSO2-2018-0230
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:63)
+	at org.wso2.security.tools.advisorytool.AdvisoryTool.main(AdvisoryTool.java:99)
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while building the advisory details.
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:96)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryDirector.createSecurityAdvisory(SecurityAdvisoryDirector.java:53)
+	... 1 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Error occurred while receiving the WSO2-2018-0230 advisory details from the PMT
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:174)
+	at org.wso2.security.tools.advisorytool.builders.CustomerSecurityAdvisoryBuilder.setAdvisoryData(CustomerSecurityAdvisoryBuilder.java:60)
+	... 2 more
+Caused by: org.wso2.security.tools.advisorytool.exeption.AdvisoryToolException: Connection to the URL https://umt.private.wso2.com/wumapi/1.0.0/properties?path=/_system/governance/securityadvisories/WSO2-2018-0230 failed
+	at org.wso2.security.tools.advisorytool.utils.Util.httpConnection(Util.java:68)
+	at org.wso2.security.tools.advisorytool.builders.SecurityAdvisoryBuilder.getAdvisoryData(SecurityAdvisoryBuilder.java:168)
+	... 3 more
+Caused by: java.net.UnknownHostException: umt.private.wso2.com: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.wso2.security.tools.advisorytool.utils.Util.httpConnection(Util.java:66)
+	... 4 more
+2018-07-30 12:15:42 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-30 12:15:42 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-30 12:15:42 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-30 12:15:42 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-30 12:15:42 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-30 12:15:43 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-30 12:15:57 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-30 12:15:57 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-30 12:16:02 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-30 12:16:28 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-30 12:16:28 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-30 12:16:28 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-30 12:16:28 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-30 12:16:28 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-30 12:16:28 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-30 12:16:40 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-30 12:16:40 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-30 12:16:46 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed
+2018-07-30 12:17:52 INFO  AdvisoryTool:68 - -------------------------------------------------
+2018-07-30 12:17:52 INFO  AdvisoryTool:69 - -----                                       -----
+2018-07-30 12:17:52 INFO  AdvisoryTool:70 - -----      Security Advisory Generator      -----
+2018-07-30 12:17:52 INFO  AdvisoryTool:71 - -----                                       -----
+2018-07-30 12:17:52 INFO  AdvisoryTool:72 - -------------------------------------------------
+2018-07-30 12:17:53 INFO  SecurityAdvisoryDirector:47 - Creating Security Advisory WSO2-2018-0230
+2018-07-30 12:17:57 INFO  CustomerSecurityAdvisoryBuilder:349 - Generating patch upload data file.
+2018-07-30 12:17:57 INFO  SecurityAdvisoryPDFOutputGenerator:51 - Security Advisory PDF generation started
+2018-07-30 12:18:01 INFO  SecurityAdvisoryPDFOutputGenerator:63 - Security Advisory PDF generation completed

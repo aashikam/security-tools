@@ -177,7 +177,7 @@ public abstract class SecurityAdvisoryBuilder {
 
         ArrayList<String> advisoryDetails = new ArrayList<>();
         try {
-
+            System.out.println(String.valueOf(result));
             JSONArray jsonMainArr = new JSONArray(String.valueOf(result));
             JSONArray jsonArray;
             JSONObject jsonObject;

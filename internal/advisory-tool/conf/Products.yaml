@@ -276,7 +276,6 @@
      isWumSupported: false
      isPatchSupported: true
      isPublicSupported: false
-     isDeprecated: true
 
    - platformVersionNumber: "4.4.0"
      kernelVersionNumber: "4.4.17"
@@ -285,7 +284,6 @@
      isWumSupported: false
      isPatchSupported: true
      isPublicSupported: false
-     isDeprecated: true
 
    - platformVersionNumber: "4.4.0"
      kernelVersionNumber: "4.4.11"
@@ -294,7 +292,6 @@
      isWumSupported: false
      isPatchSupported: true
      isPublicSupported: false
-     isDeprecated: true
 
    - platformVersionNumber: "4.4.0"
      kernelVersionNumber: "4.4.16"
@@ -303,7 +300,6 @@
      isWumSupported: true
      isPatchSupported: true
      isPublicSupported: false
-     isDeprecated: true
 
 
  -
